@@ -13,6 +13,8 @@
 		E0564C38267DF82800731B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0564C36267DF82800731B02 /* Main.storyboard */; };
 		E0564C3A267DF82A00731B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0564C39267DF82A00731B02 /* Assets.xcassets */; };
 		E0564C3D267DF82A00731B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0564C3B267DF82A00731B02 /* LaunchScreen.storyboard */; };
+		E0564C49267E0BD900731B02 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0564C48267E0BD900731B02 /* Card.swift */; };
+		E0564C4C267E0C0900731B02 /* ConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0564C4B267E0C0900731B02 /* ConcentrationGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E0564C39267DF82A00731B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0564C3C267DF82A00731B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0564C3E267DF82A00731B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0564C48267E0BD900731B02 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E0564C4B267E0C0900731B02 /* ConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E0564C32267DF82800731B02 /* SceneDelegate.swift */,
 				E0564C34267DF82800731B02 /* ViewController.swift */,
 				E0564C36267DF82800731B02 /* Main.storyboard */,
+				E0564C48267E0BD900731B02 /* Card.swift */,
+				E0564C4B267E0C0900731B02 /* ConcentrationGame.swift */,
 				E0564C39267DF82A00731B02 /* Assets.xcassets */,
 				E0564C3B267DF82A00731B02 /* LaunchScreen.storyboard */,
 				E0564C3E267DF82A00731B02 /* Info.plist */,
@@ -139,7 +145,9 @@
 			files = (
 				E0564C35267DF82800731B02 /* ViewController.swift in Sources */,
 				E0564C31267DF82800731B02 /* AppDelegate.swift in Sources */,
+				E0564C4C267E0C0900731B02 /* ConcentrationGame.swift in Sources */,
 				E0564C33267DF82800731B02 /* SceneDelegate.swift in Sources */,
+				E0564C49267E0BD900731B02 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +302,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = alexanderkovzhut.Flips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -315,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = alexanderkovzhut.Flips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
