@@ -8,38 +8,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet private weak var touchesLabel: UILabel!
+    @IBOutlet private var buttonCollection: [UIButton]!
     
-    @IBOutlet weak var touchesLabel: UILabel!
-
-    @IBOutlet var buttonCollection: [UIButton]!
+    private lazy var game = ConcentrationGame(numberOfPairsCards: numberOfPairsCards)
     
-    lazy var game = ConcentrationGame(numberOfPairsCards: (buttonCollection.count + 1) / 2)
+    var numberOfPairsCards: Int {
+        return (buttonCollection.count + 1) / 2
+    }
     
-    var touches = 0 {
+    private(set) var touches = 0 {
         didSet{
             touchesLabel.text = "Touches: \(touches)"
         }
     }
     
-    var emojiCollection = ["🐖","🦨","🐈","🐄","🦙","🐪","🐃","🐏","🐘","🐓","🦔","🦒"]
-    
-    var emojiDictionary = [Int:String]()
+    private var emojiCollection = ["🐖","🦨","🐈","🐄","🦙","🐪","🐃","🐏","🐘","🐓","🦔","🦒"]
+    private var emojiDictionary = [Card:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    func emojiIdentifier(for card: Card) -> String {
-        if emojiDictionary[card.identifier] == nil {
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiCollection.count)))
-            emojiDictionary[card.identifier] = emojiCollection.remove(at: randomIndex)
-            
+    private func emojiIdentifier(for card: Card) -> String {
+        if emojiDictionary[card] == nil {
+            emojiDictionary[card] = emojiCollection.remove(at: emojiCollection.count.arc4randomExtension)
         }
-        return emojiDictionary[card.identifier] ?? "?"
+        return emojiDictionary[card] ?? "?"
     }
     
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for index in buttonCollection.indices {
             let button = buttonCollection[index]
             let card = game.cards[index]
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func actionButton(_ sender: UIButton) {
+    @IBAction private func actionButton(_ sender: UIButton) {
         touches += 1
         
         if let buttonIndex = buttonCollection.firstIndex(of: sender) {
@@ -62,6 +61,17 @@ class ViewController: UIViewController {
             updateViewFromModel()
         }
     }
-    
+}
+
+extension Int {
+    var arc4randomExtension: Int {
+        if self > 0 {
+            return Int(arc4random_uniform(UInt32(self)))
+        } else if self < 0 {
+            return -Int(arc4random_uniform(UInt32(abs(self))))
+        } else {
+            return 0
+        }
+    }
 }
 
