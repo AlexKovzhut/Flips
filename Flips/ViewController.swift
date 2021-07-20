@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
     
     private var emojiCollection = ["🐖","🦨","🐈","🐄","🦙","🐪","🐃","🐏","🐘","🐓","🦔","🦒"]
+    
     private var emojiDictionary = [Card:String]()
     
     override func viewDidLoad() {
