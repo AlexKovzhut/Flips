@@ -14,10 +14,118 @@
             filePath = "Flips/ConcentrationGame.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "chooseCard(at:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Flips/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - 41a2ca0c17579cd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.(emojiDictionary in _0D535B6D0942AE5BC99381A3A5881FE5).getter : Swift.Dictionary&lt;Flips.Card, Swift.String&gt;"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - 22d57fafec9904c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.(emojiDictionary in _0D535B6D0942AE5BC99381A3A5881FE5).setter : Swift.Dictionary&lt;Flips.Card, Swift.String&gt;"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - 52982918b411beb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.(emojiDictionary in _0D535B6D0942AE5BC99381A3A5881FE5).modify : Swift.Dictionary&lt;Flips.Card, Swift.String&gt;"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - e06fa9b74adbd0f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.(emojiDictionary in _0D535B6D0942AE5BC99381A3A5881FE5).modify : Swift.Dictionary&lt;Flips.Card, Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - 96279ed241b40989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Flips.ViewController"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "5AC89A1B-4CE2-494A-A292-5C2312095F0F - 7702f4b801fc6fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flips.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Flips.ViewController&gt;"
+                  moduleName = "Flips"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexanderkovzhut/Documents/GitHub/Flips/Flips/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "785">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

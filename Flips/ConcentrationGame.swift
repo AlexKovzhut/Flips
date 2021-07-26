@@ -5,8 +5,6 @@
 //  Created by Alexander Kovzhut on 19.06.2021.
 //
 
-import Foundation
-
 class ConcentrationGame {
      
     private(set) var cards = [Card]()

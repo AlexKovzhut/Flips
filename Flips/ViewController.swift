@@ -8,7 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet private weak var touchesLabel: UILabel!
+    @IBOutlet private weak var touchesLabel: UILabel ! {
+        didSet {
+           updateTouches()
+        }
+    }
+    
     @IBOutlet private var buttonCollection: [UIButton]!
     
     private lazy var game = ConcentrationGame(numberOfPairsCards: numberOfPairsCards)
@@ -17,13 +22,22 @@ class ViewController: UIViewController {
         return (buttonCollection.count + 1) / 2
     }
     
+    private func updateTouches() {
+        let attributes: [NSAttributedString.Key:Any] = [
+            .strokeWidth: 4.0,
+            .strokeColor: UIColor.yellow
+        ]
+        let attributesString = NSAttributedString(string: "Touches: \(touches)", attributes: attributes)
+        touchesLabel.attributedText = attributesString
+    }
+    
     private(set) var touches = 0 {
         didSet{
-            touchesLabel.text = "Touches: \(touches)"
+            updateTouches()
         }
     }
     
-    private var emojiCollection = ["🐖","🦨","🐈","🐄","🦙","🐪","🐃","🐏","🐘","🐓","🦔","🦒"]
+    private var emojiCollection = "🐖🦨🐈🐄🦙🐪🐃🐏🐘🐓🦔🦒"
     
     private var emojiDictionary = [Card:String]()
     
@@ -34,7 +48,11 @@ class ViewController: UIViewController {
     
     private func emojiIdentifier(for card: Card) -> String {
         if emojiDictionary[card] == nil {
-            emojiDictionary[card] = emojiCollection.remove(at: emojiCollection.count.arc4randomExtension)
+            let randomStringIndex = emojiCollection.index(
+                emojiCollection.startIndex,
+                offsetBy: emojiCollection.count.arc4randomExtension
+            )
+            emojiDictionary[card] = String(emojiCollection.remove(at: randomStringIndex))
         }
         return emojiDictionary[card] ?? "?"
     }

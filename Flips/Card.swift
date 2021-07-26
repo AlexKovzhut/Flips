@@ -5,8 +5,6 @@
 //  Created by Alexander Kovzhut on 19.06.2021.
 //
 
-import Foundation
-
 struct Card {
     
     var isFaceUp = false
